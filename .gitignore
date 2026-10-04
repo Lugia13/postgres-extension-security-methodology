@@ -1,0 +1,10 @@
+# Build artifacts from struct-offset-dumper.c
+struct-offset-dumper
+*.o
+
+# Scratch/output — never commit real query transcripts or target details
+*.out
+*.log
+scratch/
+results/
+.DS_Store
