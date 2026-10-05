@@ -1,4 +1,4 @@
--- extension-recon.sql
+-- extension_recon.sql
 --
 -- Catalog-only reconnaissance for a Postgres extension's SQL-visible
 -- surface. Run each section separately; mixing a backslash meta-command
@@ -6,7 +6,7 @@
 -- rest of the input, so keep \-commands on their own line.
 --
 -- Usage: replace :'ext_name' with the extension you're auditing, e.g.
---   psql -v ext_name=some_extension -f extension-recon.sql
+--   psql -v ext_name=some_extension -f extension_recon.sql
 
 
 -- 1. Does the extension exist, and where is it installed?

@@ -1,4 +1,4 @@
--- priv-boundary-harness.sql
+-- priv_boundary_harness.sql
 --
 -- Build a test role that is provably zero-privilege before using it for
 -- anything, and a second-database target to test cross-database or

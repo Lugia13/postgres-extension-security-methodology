@@ -1,5 +1,5 @@
 /*
- * struct-offset-dumper.c
+ * struct_offset_dumper.c
  *
  * Get exact offsetof()/sizeof() values for a Postgres server-internal
  * struct by compiling against the real installed server headers, instead
@@ -16,9 +16,9 @@
  *      from the relevant Postgres core header).
  *   3. Build and run:
  *
- *        gcc -I$(pg_config --includedir-server) struct-offset-dumper.c \
- *            -o struct-offset-dumper
- *        ./struct-offset-dumper
+ *        gcc -I$(pg_config --includedir-server) struct_offset_dumper.c \
+ *            -o struct_offset_dumper
+ *        ./struct_offset_dumper
  *
  * Note: postgres.h redefines printf to an internal symbol (pg_printf)
  * that isn't available outside a full backend build. #undef it after

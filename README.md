@@ -35,13 +35,13 @@ documentation claims. That means most of the real work is:
 
 ```
 tools/
-  extension-recon.sql        -- enumerate an extension's full function/type
+  extension_recon.sql        -- enumerate an extension's full function/type
                                  surface, ACLs, SECURITY DEFINER status,
                                  and owner, from catalog alone
-  priv-boundary-harness.sql  -- build a provably zero-privilege test role
+  priv_boundary_harness.sql  -- build a provably zero-privilege test role
                                  and verify it with has_*_privilege() before
                                  using it for anything
-  struct-offset-dumper.c     -- compile against real installed Postgres
+  struct_offset_dumper.c     -- compile against real installed Postgres
                                  server headers to get exact offsetof()/
                                  sizeof() values for any C struct, instead
                                  of inferring layout from byte dumps
