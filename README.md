@@ -79,3 +79,7 @@ timeline of the program it was reported to.
 
 MIT — see [LICENSE](./LICENSE). Provided for educational and authorized
 security testing purposes only.
+
+## Author
+
+Oussama Saddati , Portfolio : oussamasaddati.vercel.app
