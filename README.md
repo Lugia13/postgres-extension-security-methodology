@@ -1,7 +1,7 @@
 # Postgres Extension Security Methodology
 
 A set of tools and a documented methodology for auditing curated,
-allow-listed PostgreSQL extensions on managed cloud database platforms —
+allow-listed PostgreSQL extensions on managed cloud database platforms
 the model used by storage/compute-separated services, where an ordinary
 role gets a curated extension list rather than raw superuser access.
 
@@ -17,7 +17,7 @@ Portfolio: [oussamasaddati.vercel.app](https://oussamasaddati.vercel.app)
 ## Why this approach
 
 On managed Postgres platforms, the interesting attack surface is rarely
-"does the SQL parser have a bug" — it's whether the platform's privilege
+"does the SQL parser have a bug" it's whether the platform's privilege
 model, the extension's own C code, and the boundary between
 tenants/databases/roles actually line up the way the platform's
 documentation claims. That means most of the real work is:
